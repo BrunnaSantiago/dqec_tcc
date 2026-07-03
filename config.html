@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Configurações da Conta</title>
+</head>
+<body style="margin:0; font-family:Arial,sans-serif;">
+
+  <header style="display:flex; justify-content:space-between; align-items:center; padding:16px 32px; border-bottom:1px solid #000;">
+    <div style="font-size:28px; font-weight:bold;">DQEC</div>
+    <div style="display:flex; gap:12px;">
+      <a href="config.html" style="border:1px solid #000; color:#000; padding:8px 12px; text-decoration:none;">⚙</a>
+      <a href="login.html" style="border:1px solid #000; color:#000; padding:8px 16px; text-decoration:none;">LOGOUT</a>
+    </div>
+  </header>
+
+  <main style="display:flex; justify-content:center; padding:32px 16px;">
+    <div style="border:1px solid #000; padding:28px 32px; width:100%; max-width:900px;">
+
+      <div style="display:flex; align-items:center; gap:12px; margin-bottom:20px;">
+        <span style="font-size:24px;">⚙</span>
+        <div>
+          <h1 style="font-size:20px; margin:0 0 4px;">Configurações da Conta</h1>
+          <p style="font-size:13px; margin:0;">Gerencie suas informações pessoais e de acesso ao sistema.</p>
+        </div>
+      </div>
+
+      <hr style="margin-bottom:24px;" />
+
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:32px;">
+
+          <section>
+            <h2 style="font-size:15px; margin:0 0 20px;">👤 Informações da Conta</h2>
+
+            <div style="margin-bottom:16px;">
+              <label style="display:block; font-size:13px; margin-bottom:6px;">Nome Completo</label>
+              <input type="text" name="nomeCompleto" value="João da Silva"
+                style="width:100%; padding:10px; border:1px solid #000; font-size:14px; box-sizing:border-box;" />
+            </div>
+
+            <div style="margin-bottom:16px;">
+              <label style="display:block; font-size:13px; margin-bottom:6px;">E-mail</label>
+              <input type="email" name="email" value="joao.silva@empresa.com"
+                style="width:100%; padding:10px; border:1px solid #000; font-size:14px; box-sizing:border-box;" />
+            </div>
+
+            <div style="margin-bottom:16px;">
+              <label style="display:block; font-size:13px; margin-bottom:6px;">Telefone</label>
+              <input type="tel" name="telefone" value="(11) 98765 4321"
+                style="width:100%; padding:10px; border:1px solid #000; font-size:14px; box-sizing:border-box;" />
+            </div>
+
+          </section>
+
+          <section>
+            <h2 style="font-size:15px; margin:0 0 20px;">🔒 Alterar Senha</h2>
+
+            <div style="margin-bottom:16px;">
+              <label style="display:block; font-size:13px; margin-bottom:6px;">Senha Atual</label>
+              <input type="password" name="senhaAtual" placeholder="Digite sua senha atual"
+                style="width:100%; padding:10px; border:1px solid #000; font-size:14px; box-sizing:border-box;" />
+            </div>
+
+            <div style="margin-bottom:16px;">
+              <label style="display:block; font-size:13px; margin-bottom:6px;">Nova Senha</label>
+              <input type="password" name="novaSenha" placeholder="Digite sua nova senha"
+                minlength="8"
+                pattern="^(?=.*\d)(?=.*[A-Z])(?=.*[!@#$%^&amp;*]).{8,}$"
+                title="Mínimo 8 caracteres, 1 número, 1 maiúscula e 1 caractere especial"
+                style="width:100%; padding:10px; border:1px solid #000; font-size:14px; box-sizing:border-box;" />
+            </div>
+
+            <div style="margin-bottom:16px;">
+              <label style="display:block; font-size:13px; margin-bottom:6px;">Confirmar Nova Senha</label>
+              <input type="password" name="confirmarSenha" placeholder="Digite novamente a nova senha"
+                style="width:100%; padding:10px; border:1px solid #000; font-size:14px; box-sizing:border-box;" />
+            </div>
+
+            <div style="border:1px solid #000; padding:14px 16px;">
+              <div style="font-size:13px; margin-bottom:10px;">
+                <strong>Requisitos da senha:</strong>
+              </div>
+              <ul style="list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:6px;">
+                <li style="font-size:12px;">✔ Mínimo de 8 caracteres</li>
+                <li style="font-size:12px;">✔ Pelo menos 1 número</li>
+                <li style="font-size:12px;">✔ Pelo menos 1 letra maiúscula</li>
+                <li style="font-size:12px;">✔ Pelo menos 1 caractere especial</li>
+              </ul>
+            </div>
+          </section>
+
+        </div>
+
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-top:28px; padding-top:20px; border-top:1px solid #000;">
+          <span style="font-size:13px;">Suas informações estão seguras conosco.</span>
+          <button type="submit" style="border:1px solid #000; background:#fff; font-size:14px; font-weight:bold; padding:12px 28px;">
+            SALVAR ALTERAÇÕES
+          </button>
+        </div>
+      </form>
+
+    </div>
+  </main>
+
+</body>
+</html>
